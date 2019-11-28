@@ -11,4 +11,6 @@ public interface TestService {
 
 	List<Country> queryCountryByCountryId(int countryId);
 
+//	List<Country> queryCountryAndCityByCountryId(int countryId);
+
 }

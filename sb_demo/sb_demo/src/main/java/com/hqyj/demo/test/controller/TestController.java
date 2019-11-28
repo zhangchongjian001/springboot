@@ -2,9 +2,6 @@ package com.hqyj.demo.test.controller;
 
 
 import java.util.List;
-
-import javax.websocket.server.PathParam;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.hqyj.demo.test.model.City;
 import com.hqyj.demo.test.model.Country;
 import com.hqyj.demo.test.service.TestService;
@@ -68,16 +64,16 @@ public class TestController {
 	@RequestMapping("/queryCountry/{countryId}")
 	private List<Country> queryCountryByCountryId(@PathVariable("countryId") int countryId){
 		
-		return testService.queryCountryByCountryId(countryId);	
+		return testService.queryCountryByCountryId(countryId);
 	}
 	
 	
-	@ResponseBody
-	@RequestMapping("/queryCountryAndCity/{countryId}")
-	private List<Country> queryCountryAndCityByCountryId(@PathVariable("countryId") int countryId){
-		
-		return testService.queryCountryByCountryId(countryId);	
-	}
+//	@ResponseBody
+//	@RequestMapping("/queryCountryAndCity/{countryId}")
+//	private List<Country> queryCountryAndCityByCountryId(@PathVariable("countryId") int countryId){
+//		
+//		return testService.queryCountryAndCityByCountryId(countryId);	
+//	}
 	
 	
 	
@@ -98,7 +94,7 @@ public class TestController {
 		StringBuilder str=new StringBuilder();
 		str.append("----port------").append(port).append("<br>------name----").append(name)
 		.append("<br>----age------").append(age).append("<br>-----description-----")
-		.append(description).append("<br>------random----").append(random);
+		.append(description).append("<br>------random----").append(random).append("----------------");
 		return str;	
 	}
 	
@@ -128,6 +124,6 @@ public class TestController {
 		LOGGER.info("this is info");
 		LOGGER.warn("this is warn");
 		LOGGER.error("this is error");
-		return "this is log ";
+		return "this is logput";
 	}
 }

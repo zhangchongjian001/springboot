@@ -24,7 +24,7 @@ public class Country {
 	private String timeZone;
 	private int languageId;
 	private int currencyId;
-	private List<City> cities;
+//	private List<City> cities;
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	private Date dateModified;
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
@@ -149,53 +149,53 @@ public class Country {
 	public void setDateCreated(Date dateCreated) {
 		this.dateCreated = dateCreated;
 	}
-	public List<City> getCities() {
-		return cities;
-	}
-	public void setCities(List<City> cities) {
-		this.cities = cities;
-	}
-	@Override
-	public String toString() {
-		return "Country [countryId=" + countryId + ", countryName=" + countryName + ", localCountryName="
-				+ localCountryName + ", countryCode=" + countryCode + ", countryCode2=" + countryCode2 + ", continent="
-				+ continent + ", region=" + region + ", surfaceArea=" + surfaceArea + ", indepYear=" + indepYear
-				+ ", population=" + population + ", lifeExpectancy=" + lifeExpectancy + ", gnp=" + gnp
-				+ ", governmentForm=" + governmentForm + ", headOfState=" + headOfState + ", capital=" + capital
-				+ ", timeZone=" + timeZone + ", languageId=" + languageId + ", currencyId=" + currencyId + ", cities="
-				+ cities + ", dateModified=" + dateModified + ", dateCreated=" + dateCreated + "]";
-	}
-	public Country(int countryId, String countryName, String localCountryName, String countryCode, String countryCode2,
-			String continent, String region, float surfaceArea, int indepYear, int population, float lifeExpectancy,
-			float gnp, String governmentForm, String headOfState, int capital, String timeZone, int languageId,
-			int currencyId, List<City> cities, Date dateModified, Date dateCreated) {
-		super();
-		this.countryId = countryId;
-		this.countryName = countryName;
-		this.localCountryName = localCountryName;
-		this.countryCode = countryCode;
-		this.countryCode2 = countryCode2;
-		this.continent = continent;
-		this.region = region;
-		this.surfaceArea = surfaceArea;
-		this.indepYear = indepYear;
-		this.population = population;
-		this.lifeExpectancy = lifeExpectancy;
-		this.gnp = gnp;
-		this.governmentForm = governmentForm;
-		this.headOfState = headOfState;
-		this.capital = capital;
-		this.timeZone = timeZone;
-		this.languageId = languageId;
-		this.currencyId = currencyId;
-		this.cities = cities;
-		this.dateModified = dateModified;
-		this.dateCreated = dateCreated;
-	}
-	public Country() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+//	public List<City> getCities() {
+//		return cities;
+//	}
+//	public void setCities(List<City> cities) {
+//		this.cities = cities;
+//	}
+//	@Override
+//	public String toString() {
+//		return "Country [countryId=" + countryId + ", countryName=" + countryName + ", localCountryName="
+//				+ localCountryName + ", countryCode=" + countryCode + ", countryCode2=" + countryCode2 + ", continent="
+//				+ continent + ", region=" + region + ", surfaceArea=" + surfaceArea + ", indepYear=" + indepYear
+//				+ ", population=" + population + ", lifeExpectancy=" + lifeExpectancy + ", gnp=" + gnp
+//				+ ", governmentForm=" + governmentForm + ", headOfState=" + headOfState + ", capital=" + capital
+//				+ ", timeZone=" + timeZone + ", languageId=" + languageId + ", currencyId=" + currencyId + ", cities="
+//				+ cities + ", dateModified=" + dateModified + ", dateCreated=" + dateCreated + "]";
+//	}
+//	public Country(int countryId, String countryName, String localCountryName, String countryCode, String countryCode2,
+//			String continent, String region, float surfaceArea, int indepYear, int population, float lifeExpectancy,
+//			float gnp, String governmentForm, String headOfState, int capital, String timeZone, int languageId,
+//			int currencyId, List<City> cities, Date dateModified, Date dateCreated) {
+//		super();
+//		this.countryId = countryId;
+//		this.countryName = countryName;
+//		this.localCountryName = localCountryName;
+//		this.countryCode = countryCode;
+//		this.countryCode2 = countryCode2;
+//		this.continent = continent;
+//		this.region = region;
+//		this.surfaceArea = surfaceArea;
+//		this.indepYear = indepYear;
+//		this.population = population;
+//		this.lifeExpectancy = lifeExpectancy;
+//		this.gnp = gnp;
+//		this.governmentForm = governmentForm;
+//		this.headOfState = headOfState;
+//		this.capital = capital;
+//		this.timeZone = timeZone;
+//		this.languageId = languageId;
+//		this.currencyId = currencyId;
+//		this.cities = cities;
+//		this.dateModified = dateModified;
+//		this.dateCreated = dateCreated;
+//	}
+//	public Country() {
+//		super();
+//		// TODO Auto-generated constructor stub
+//	}
 	
 	
 

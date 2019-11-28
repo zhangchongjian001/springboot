@@ -19,4 +19,7 @@ public interface TestDao {
 	
 	@Select("SELECT * FROM m_country where country_id=#{countryId}")
 	List<Country> queryCountryByCountryId(int countryId);
+
+//	@Select("")
+//	List<Country> queryCountryAndCityByCountryId(int countryId);
 }
