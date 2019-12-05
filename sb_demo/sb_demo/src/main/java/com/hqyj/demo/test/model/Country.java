@@ -24,7 +24,7 @@ public class Country {
 	private String timeZone;
 	private int languageId;
 	private int currencyId;
-//	private List<City> cities;
+	private List<City> cities;
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	private Date dateModified;
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
@@ -149,12 +149,12 @@ public class Country {
 	public void setDateCreated(Date dateCreated) {
 		this.dateCreated = dateCreated;
 	}
-//	public List<City> getCities() {
-//		return cities;
-//	}
-//	public void setCities(List<City> cities) {
-//		this.cities = cities;
-//	}
+	public List<City> getCities() {
+		return cities;
+	}
+	public void setCities(List<City> cities) {
+		this.cities = cities;
+	}
 //	@Override
 //	public String toString() {
 //		return "Country [countryId=" + countryId + ", countryName=" + countryName + ", localCountryName="

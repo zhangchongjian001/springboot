@@ -1,0 +1,19 @@
+<section>
+	
+	<h1 th:text="${message}"></h1>
+	
+	<h3>th:展示所有user</h3>
+	<table>
+		<th>userId</th>
+		<th>userName</th>
+		<th>password</th>
+		<th>CreateDate</th>
+		<tr th:each="user:${list}">
+			<td th:text="${user.userId}"></td>
+			<td th:text="${user.userName}"></td>
+			<td th:text="${user.password}"></td>
+			<td th:text="${user.createDate}"></td>
+		</tr>
+	</table>
+	<input type="button" src="">
+</section>

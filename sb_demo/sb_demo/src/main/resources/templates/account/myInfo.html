@@ -1,0 +1,35 @@
+<section>
+<div id="infoList" class="row">
+<input type="hidden" id="userId">
+<div class="form-group">
+	<label for="userName" class="col-sm-1 control-label">用户名：</label>
+	<div class="col-sm-2">
+		<input type="text" class="form-control" id="userName" value="" readonly>
+	</div>
+</div>
+<div class="form-group">
+	<label for="userName" class="col-sm-1 control-label">密码：</label>
+	<div class="col-sm-2">
+		<input type="text" class="form-control" id="password" th:value="${user.userName}" readonly>
+	</div>
+</div>
+<button id="updatePassword" type="button" class="btn btn-default">新增</button>
+</div>
+
+<div id="infoEdit" style="display:none;">
+<div class="form-group">
+	<label for="userName" class="col-sm-1 control-label">用户名：</label>
+	<div class="col-sm-2">
+		<input type="text" class="form-control" id="userName" readonly>
+	</div>
+</div>
+<div class="form-group">
+	<label for="userName" class="col-sm-1 control-label">密码：</label>
+	<div class="col-sm-2">
+		<input type="text" class="form-control" id="userName" >
+	</div>
+</div>
+<button id="updatePassword" type="button" class="btn btn-default">确认修改</button>
+</div>
+</div>
+</section>
